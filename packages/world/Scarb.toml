@@ -1,0 +1,16 @@
+[package]
+name = "tatami_world"
+version.workspace = true
+edition.workspace = true
+cairo-version.workspace = true
+scarb-version.workspace = true
+repository.workspace = true
+
+[tool]
+fmt.workspace = true
+
+[dependencies]
+starknet.workspace = true
+dojo.workspace = true
+
+[lib]

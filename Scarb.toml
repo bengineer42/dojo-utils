@@ -1,0 +1,36 @@
+[package]
+name = "tatami"
+version.workspace = true
+edition.workspace = true
+
+[workspace]
+members = ["packages/achievements", "packages/world", "packages/permissions"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024_07"
+cairo-version = "2.10.1"
+scarb-version = "2.10.1"
+repository = "https://github.com/begineer42/dojo-utils"
+
+[workspace.dependencies]
+starknet = "2.10.1"
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.5.0" }
+
+[dependencies]
+starknet.workspace = true
+tatami_achievements = { path = "packages/achievements" }
+tatami_world = { path = "packages/world" }
+tatami_permissions = { path = "packages/permissions" }
+
+[lib]
+
+[workspace.tool.fmt]
+
+[tool]
+fmt.workspace = true
+
+[[target.starknet-contract]]
+allowed-libfuncs-list.name = "experimental"
+sierra = true
+casm = false
