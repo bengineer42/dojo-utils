@@ -27,6 +27,7 @@ name = "tatami"
 version = "0.1.0"
 dependencies = [
  "tatami_achievements",
+ "tatami_owner_writer",
  "tatami_permissions",
  "tatami_world",
 ]
@@ -39,6 +40,10 @@ dependencies = [
  "dojo",
  "tatami_world",
 ]
+
+[[package]]
+name = "tatami_owner_writer"
+version = "0.1.0"
 
 [[package]]
 name = "tatami_permissions"

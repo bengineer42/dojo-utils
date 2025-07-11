@@ -4,7 +4,12 @@ version.workspace = true
 edition.workspace = true
 
 [workspace]
-members = ["packages/achievements", "packages/world", "packages/permissions"]
+members = [
+    "packages/achievements",
+    "packages/world",
+    "packages/permissions",
+    "packages/owner_writer",
+]
 
 [workspace.package]
 version = "0.1.0"
@@ -22,6 +27,7 @@ starknet.workspace = true
 tatami_achievements = { path = "packages/achievements" }
 tatami_world = { path = "packages/world" }
 tatami_permissions = { path = "packages/permissions" }
+tatami_owner_writer = { path = "packages/owner_writer" }
 
 [lib]
 

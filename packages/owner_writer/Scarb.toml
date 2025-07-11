@@ -1,0 +1,15 @@
+[package]
+name = "tatami_owner_writer"
+version.workspace = true
+edition.workspace = true
+cairo-version.workspace = true
+scarb-version.workspace = true
+repository.workspace = true
+
+[tool]
+fmt.workspace = true
+
+[dependencies]
+starknet.workspace = true
+
+[lib]
